@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerador de Email</h1>
+    <div class='formatar_mensagem'>
+        <div id="assunto" class="assunto">
+            <label style="height: auto;">Assunto:</label>
+            <div>
+                <select onchange="TipoAssunto()">            
+                    <option value="assunto_automatico">Assunto automático</option>
+                    <option value="assunto_pre_definido">Assunto pré-definido</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div id="remetente" class="remetente">
+            <label>From:</label>
+            <input type="email">
+        </div>
+        <hr>
+        <div id="destinatario" class="destinatario">
+            <label>To:</label>
+            <input type="email">
+        </div>
+        <hr>
+        <div id="mensagem" class="mensagem">
+            <label>Message:</label>
+            <textarea></textarea>
+        </div>
+    </div>
+    <button onclick="FormatarMensagem()">Enviar</button>
+</body>
+<script src="main.js"></script>
+</html>
